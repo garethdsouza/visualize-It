@@ -10,15 +10,16 @@
     <link rel="shortcut icon" href="" />
     <title>Visualize It</title>
   </head>
-  <body style="width: 100vh;height: 100vh">
-    <div
-      id="drop_zone"
-      ondrop="dropHandler(event);"
-      ondragover="dragOverHandler(event);"
-      style="  border: 5px solid blue;width:  200px;height: 100px;"
-    >
-      <p>Drag one or more files to this Drop Zone ...</p>
-    </div>
+  <body style="width: 100%;height: 50%; display: grid">
+    <input type="file" id="file-input" />
+    Chart Type:
+    <select id="chart"></select>
+    Y - Axis:
+    <select id="yaxis"></select>
+    X - Axis:
+    <select id="xaxis"></select>
+    <canvas id="myChart"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
